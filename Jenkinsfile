@@ -14,27 +14,20 @@ pipeline {
 
         stage('Initialisation de Terraform') {
             steps {
-                dir('terraform') {
-                    bat 'terraform init'
-                }
+                bat 'terraform init'
             }
         }
 
         stage('Plan Terraform') {
             steps {
-                dir('terraform') {
-                    bat 'terraform plan'
-                }
+                bat 'terraform plan'
             }
         }
 
         stage('Application de Terraform') {
             steps {
-                dir('terraform') {
-                    bat 'terraform apply -auto-approve'
-                }
+                bat 'terraform apply -auto-approve'
             }
         }
     }
 }
-
