@@ -8,5 +8,5 @@ terraform {
 }
 
 provider "kubernetes" {
-  config_path = "C:/Jenkins_kube/config"
+  config_path = "C:/Users/hp/Documents/Jenkins_kube"
 }
