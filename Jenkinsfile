@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout du code') {
             steps {
-                git 'https://github.com/ton-user/ton-repo.git'
+                git 'https://github.com/Aissatou022/Terraform.git'
             }
         }
 
