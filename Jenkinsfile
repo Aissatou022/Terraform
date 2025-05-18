@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout du code') {
             steps {
-                git 'https://github.com/Aissatou022/Terraform.git'
+                git branch: 'main', url: 'https://github.com/Aissatou022/Terraform.git'
             }
         }
 
@@ -37,3 +37,4 @@ pipeline {
         }
     }
 }
+
